@@ -1,0 +1,531 @@
+{
+  "facets": {
+    "organization": {
+      "facetAttributes": {
+        "admin_account_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "org_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "status": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      },
+      "objectType": "NODE"
+    },
+    "organizational_unit": {
+      "facetAttributes": {
+        "region": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": true,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "32"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "ou_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      },
+      "objectType": "NODE"
+    },
+    "department": {
+      "facetAttributes": {
+        "account_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      },
+      "objectType": "LEAF_NODE"
+    },
+    "user": {
+      "facetAttributes": {
+        "user_status": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "region": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": true,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "32"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "last_name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "display_name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "middle_name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "locale": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "mobile_phone_number": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "address (country)": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "first_name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "email": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "username": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "user_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      },
+      "objectType": "LEAF_NODE"
+    },
+    "organization_user": {
+      "facetAttributes": {
+        "employee_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "organization_id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "title": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "NOT_REQUIRED"
+        },
+        "department": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      },
+      "objectType": "LEAF_NODE"
+    },
+    "group": {
+      "facetAttributes": {
+        "name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "ARN": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      }
+    },
+    "role": {
+      "facetAttributes": {
+        "name": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "id": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        },
+        "ARN": {
+          "attributeDefinition": {
+            "attributeType": "STRING",
+            "isImmutable": false,
+            "attributeRules": {
+              "nameLength": {
+                "parameters": {
+                  "min": "1",
+                  "max": "1024"
+                },
+                "ruleType": "STRING_LENGTH"
+              }
+            }
+          },
+          "requiredBehavior": "REQUIRED_ALWAYS"
+        }
+      }
+    },
+    "indexes": {
+      "facetAttributes": {},
+      "objectType": "NODE"
+    },
+    "organizations": {
+      "facetAttributes": {},
+      "objectType": "NODE"
+    },
+    "groups": {
+      "facetAttributes": {},
+      "objectType": "NODE"
+    },
+    "roles": {
+      "facetAttributes": {},
+      "objectType": "NODE"
+    }
+  },
+  "typedLinkFacets": {
+    "member": {
+      "facetAttributes": {},
+      "identityAttributeOrder": []
+    },
+    "group_member": {
+      "facetAttributes": {},
+      "identityAttributeOrder": []
+    },
+    "assigned": {
+      "facetAttributes": {},
+      "identityAttributeOrder": []
+    }
+  }
+}
