@@ -2,55 +2,7 @@
   "facets": {
     "organization": {
       "facetAttributes": {
-        "admin_account_id": {
-          "attributeDefinition": {
-            "attributeType": "STRING",
-            "isImmutable": false,
-            "attributeRules": {
-              "nameLength": {
-                "parameters": {
-                  "min": "1",
-                  "max": "1024"
-                },
-                "ruleType": "STRING_LENGTH"
-              }
-            }
-          },
-          "requiredBehavior": "REQUIRED_ALWAYS"
-        },
-        "org_id": {
-          "attributeDefinition": {
-            "attributeType": "STRING",
-            "isImmutable": false,
-            "attributeRules": {
-              "nameLength": {
-                "parameters": {
-                  "min": "1",
-                  "max": "1024"
-                },
-                "ruleType": "STRING_LENGTH"
-              }
-            }
-          },
-          "requiredBehavior": "REQUIRED_ALWAYS"
-        },
         "name": {
-          "attributeDefinition": {
-            "attributeType": "STRING",
-            "isImmutable": false,
-            "attributeRules": {
-              "nameLength": {
-                "parameters": {
-                  "min": "1",
-                  "max": "1024"
-                },
-                "ruleType": "STRING_LENGTH"
-              }
-            }
-          },
-          "requiredBehavior": "REQUIRED_ALWAYS"
-        },
-        "status": {
           "attributeDefinition": {
             "attributeType": "STRING",
             "isImmutable": false,
@@ -497,7 +449,7 @@
         }
       }
     },
-    "indexes": {
+    "indices": {
       "facetAttributes": {},
       "objectType": "NODE"
     },
