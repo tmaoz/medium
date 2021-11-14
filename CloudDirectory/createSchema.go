@@ -59,4 +59,18 @@ func main() {
 	}
 
 	fmt.Println(putSchemaOutput)
+
+	// publish the schema
+	publishSchemaInput := &clouddirectory.PublishSchemaInput{
+		Name:                 aws.String("MyNewSchema"),
+		DevelopmentSchemaArn: putSchemaOutput.Arn,
+		Version:              aws.String("1.0"),
+	}
+
+	publishSchemaOutput, err := cloudDirectorySession.PublishSchema(publishSchemaInput)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(publishSchemaOutput)
 }
